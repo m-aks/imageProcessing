@@ -7,7 +7,7 @@
 [/src/main/resources/pic.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice04/src/main/resources/pic.jpg) - исходное многоцветное изображение.
 
 ### Гауссово размытие
-Алгоритм представлен в классе [GaussianBlur.java](https://github.com/m-aks/imageProcessing/blob/1042c76f651b6b090a2d5b0377aad38dcb8c3432/Practice04/src/main/java/GaussianBlur.java).
+Алгоритм представлен в классе [GaussianBlur.java](https://github.com/m-aks/imageProcessing/blob/main/Practice04/src/main/java/GaussianBlur.java).
 
 Ниже приведен фрагмент кода, осуществляющий размытие по одному из указанных направление:
 ```
@@ -40,9 +40,9 @@
       }
   }
 ```
-Результат работы: [/result/gaussian/result.jpg](https://github.com/m-aks/imageProcessing/blob/1042c76f651b6b090a2d5b0377aad38dcb8c3432/Practice04/result/gaussian/result.jpg)
+Результат работы: [/result/gaussian/result.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice04/result/gaussian/result.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/1042c76f651b6b090a2d5b0377aad38dcb8c3432/Practice04/result/gaussian/result.jpg"/>
+  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice04/result/gaussian/result.jpg"/>
   
   Рисунок 1 – Гауссово размытие
 </div>
@@ -61,9 +61,9 @@
       return result;
   }
 ```
-Результат работы: [/result/sharp/result.jpg](https://github.com/m-aks/imageProcessing/blob/1042c76f651b6b090a2d5b0377aad38dcb8c3432/Practice04/result/sharp/result2.jpg)
+Результат работы: [/result/sharp/result.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice04/result/sharp/result2.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/1042c76f651b6b090a2d5b0377aad38dcb8c3432/Practice04/result/sharp/result2.jpg"/>
+  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice04/result/sharp/result2.jpg"/>
   
   Рисунок 2 – Повышения резкости
 </div>
@@ -83,9 +83,9 @@
       save(result, "result/sharpLib1", "result", FORMAT);
   }
 ```
-Результат работы: [/result/sharpLib1/result.jpg](https://github.com/m-aks/imageProcessing/blob/1042c76f651b6b090a2d5b0377aad38dcb8c3432/Practice04/result/sharpLib1/result.jpg)
+Результат работы: [/result/sharpLib1/result.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice04/result/sharpLib1/result.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/1042c76f651b6b090a2d5b0377aad38dcb8c3432/Practice04/result/sharpLib1/result.jpg"/>
+  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice04/result/sharpLib1/result.jpg"/>
   
   Рисунок 3 – Повышения резкости с помощью OpenCV. Способ первый. 
 </div>
@@ -109,9 +109,9 @@
       save(result, "result/sharpLib2", "result", FORMAT);
   }
 ```
-Результат работы: [/result/sharpLib2/result.jpg](https://github.com/m-aks/imageProcessing/blob/1042c76f651b6b090a2d5b0377aad38dcb8c3432/Practice04/result/sharpLib2/result.jpg)
+Результат работы: [/result/sharpLib2/result.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice04/result/sharpLib2/result.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/1042c76f651b6b090a2d5b0377aad38dcb8c3432/Practice04/result/sharpLib2/result.jpg"/>
+  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice04/result/sharpLib2/result.jpg"/>
   
   Рисунок 5 – Повышения резкости с помощью OpenCV. Способ второй. 
 </div>
