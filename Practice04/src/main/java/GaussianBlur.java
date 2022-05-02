@@ -55,9 +55,9 @@ public class GaussianBlur {
             for (int j = 0; j < width; j++) {
                 int color = img.getRGB(j, i);
                 int index = width * i + j;
-                r[index] = ch1(color);
-                g[index] = ch2(color);
-                b[index] = ch3(color);
+                r[index] = Main.ch1(color);
+                g[index] = Main.ch2(color);
+                b[index] = Main.ch3(color);
             }
         }
 
@@ -87,7 +87,7 @@ public class GaussianBlur {
                     b2[index] = (bsum / sum);
 
                     if (blurType == BlurType.HORIZONTAL) {
-                        result.setRGB(j, i, color(rsum / sum, gsum / sum, bsum / sum));
+                        result.setRGB(j, i, Main.color(rsum / sum, gsum / sum, bsum / sum));
                     }
 
                     ++index;
@@ -123,33 +123,9 @@ public class GaussianBlur {
                     read += width;
                     ++tempy;
                 }
-                result.setRGB(j, i, color(rsum / sum, gsum / sum, bsum / sum));
+                result.setRGB(j, i, Main.color(rsum / sum, gsum / sum, bsum / sum));
             }
         }
         return result;
-    }
-
-    private int ch1(int color) {
-        return (color & 0xff0000) >> 16;
-    }
-
-    private int ch2(int color) {
-        return (color & 0xff00) >> 8;
-    }
-
-    private int ch3(int color) {
-        return color & 0xff;
-    }
-
-    private static int color(double ch1, double ch2, double ch3) {
-        return color((int) Math.round(ch1), (int) Math.round(ch2), (int) Math.round(ch3));
-    }
-
-    private static int color(int ch1, int ch2, int ch3) {
-        return check(ch1) << 16 | check(ch2) << 8 | check(ch3);
-    }
-
-    private static int check(int color) {
-        return color > 255 ? 255 : color & 0xff;
     }
 }

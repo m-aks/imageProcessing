@@ -119,19 +119,19 @@ public class Main {
         return convertedImage;
     }
 
-    private static int ch1(int color) {
+    public static int ch1(int color) {
         return (color & 0xff0000) >> 16;
     }
 
-    private static int ch2(int color) {
+    public static int ch2(int color) {
         return (color & 0xff00) >> 8;
     }
 
-    private static int ch3(int color) {
+    public static int ch3(int color) {
         return color & 0xff;
     }
 
-    private static int color(int ch1, int ch2, int ch3) {
+    public static int color(int ch1, int ch2, int ch3) {
         return check(ch1) << 16 | check(ch2) << 8 | check(ch3);
     }
 
