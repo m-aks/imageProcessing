@@ -264,14 +264,6 @@ public class Main {
         return result;
     }
 
-    /*private static BufferedImage mat2Img(Mat mat) {
-        byte[] data = new byte[mat.rows() * mat.cols() * (int) (mat.elemSize())];
-        mat.get(0, 0, data);
-        BufferedImage img = new BufferedImage(mat.cols(), mat.rows(), TYPE_3BYTE_BGR);
-        img.getRaster().setDataElements(0, 0, mat.cols(), mat.rows(), data);
-        return img;
-    }*/
-
     private static Mat img2Mat(BufferedImage image) {
         image = convertTo3ByteBGRType(image);
         byte[] data = ((DataBufferByte) image.getRaster().getDataBuffer()).getData();
